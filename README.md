@@ -18,9 +18,7 @@ cat ~/.ssh/git.pub
 ```
 
 > [!NOTE]
-> ([SSH keys](https://github.com/settings/keys))
-
-https://github.com/settings/keys
+> [SSH keys](https://github.com/settings/keys)
 
 2. Тест:
 
