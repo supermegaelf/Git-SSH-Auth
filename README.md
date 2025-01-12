@@ -1,8 +1,26 @@
-1. Сгенерировать ключ:
+### 1. Создать SSH-ключ, заменив `your_email@example.com` на почту GitHub:
 
 ```
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/git
 ```
+
+### 2. Активировать и добавить ключ в SSH-агент:
+
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/git
+```
+
+### 3. Добавить ключ на GitHub:
+
+```
+cat ~/.ssh/git.pub
+```
+
+> [!NOTE]
+> ([SSH keys](https://github.com/settings/keys))
+
+https://github.com/settings/keys
 
 2. Тест:
 
