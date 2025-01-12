@@ -47,38 +47,3 @@ ssh -T git@ssh.github.com
 ```
 git clone git@github.com:username/example_repository.git
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-3. Отобразить список всех удалённых репозиториев, настроеных для вашего локального репозитория Git:
-
-```
-git remote -v
-```
-
-Если вывод такой: `https://github.com/supermegaelf/Marzban-Subscription-Page.git`
-
-Нужно исправить, чтобы строка выше начиналась не с `https`, а с `git`.
-
-4. Удалить удалённый репозиторий:
-
-```
-git remote rm origin
-```
-
-5. Добавить новый удалённый репозиторий:
-
-```
-git remote add origin git@github.com:supermegaelf/Marzban-Subscription-Page.git
-```
-
-После этого `git push origin master` будет работать.
