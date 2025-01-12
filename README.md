@@ -14,7 +14,7 @@ ssh-add ~/.ssh/git
 ### 3. Добавить ключ на GitHub:
 
 ```
-cat ~/.ssh/git.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 
 > [!NOTE]
