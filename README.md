@@ -20,11 +20,44 @@ cat ~/.ssh/git.pub
 > [!NOTE]
 > [SSH keys](https://github.com/settings/keys)
 
-2. Тест:
+### 4. Настроить SSH-конфигурацию:
 
 ```
-ssh -vT git@github.com
+nano ~/.ssh/config
 ```
+
+Добавить:
+
+```
+Host github
+  HostName github.com
+  User git
+  Port 2222
+  IdentityFile ~/.ssh/git
+```
+
+### 5. Проверить соединение:
+
+```
+ssh -T github
+```
+
+### 6. Клонировать с GitHub с помощью команды:
+
+```
+git clone git@github.com:username/example_repository.git
+```
+
+
+
+
+
+
+
+
+
+
+
 
 3. Отобразить список всех удалённых репозиториев, настроеных для вашего локального репозитория Git:
 
