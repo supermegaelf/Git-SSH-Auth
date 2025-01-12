@@ -1,4 +1,4 @@
-1. Сгенерировать ключ, выбрать дирректорию для SSH ключа `/root/.ssh/github.pub`:
+1. Сгенерировать и выбрать дирректорию ключа `/root/.ssh/github.pub`:
 
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
