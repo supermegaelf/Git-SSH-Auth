@@ -1,7 +1,7 @@
 ### 1. Создать SSH-ключ, заменив `your_email@example.com` на почту GitHub:
 
 ```
-ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/git
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 ### 2. Активировать и добавить ключ в SSH-агент:
@@ -33,7 +33,7 @@ Host github
   HostName github.com
   User git
   Port 2222
-  IdentityFile ~/.ssh/git
+  IdentityFile ~/.ssh/id_ed25519
 ```
 
 ### 5. Проверить соединение:
